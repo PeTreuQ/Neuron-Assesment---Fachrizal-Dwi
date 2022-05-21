@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Counter</title>
+    <style>
+        body { counter-reset: section}
+        h3::before {
+            counter-increment: section;
+            content: "Judul " counter(section) ' ' ;
+        }
+    </style>
+</head>
+<body>
+    <h2>Module</h2>
+    <h3>HTML</h3>
+    <h3>CSS</h3>
+    <h3>PHP</h3>
+</body>
+</html>

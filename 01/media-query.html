@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Query</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        #container {
+            position: absolute;
+        }
+        .row-1, .row-2 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: orange;
+            }
+            .row-2 {
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            body {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Media Query</h2>
+    <div id="container">
+        <div class="row-1">Kolom 1</div>
+        <div class="row-2">Kolom 2</div>
+    </div>
+</body>
+</html>
