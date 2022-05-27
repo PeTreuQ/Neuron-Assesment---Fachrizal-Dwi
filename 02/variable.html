@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Data Type, Pass Value & Reference</title>
+</head>
+<body>
+<script>
+    //pass value by reference
+    var a = 1,
+        b = 2,
+        c = a+b;
+    console.log(c)
+
+    // type data primitif
+    var nama = "fachrizal dwi",
+        umur = 22,
+        sudahMenikah = true;
+
+    console.log(nama);
+    console.log(umur);
+    console.log(sudahMenikah);
+
+    const person = {
+        first_name : 'fachrizal',
+        last_name : 'dwi'
+    }
+
+    console.log(typeof person)
+    anak = ['anak 1', 'anak 2']
+    console.log(anak);
+
+    const functionExample = (name)=>{
+        return 'hello weud ' + name
+    }
+
+    console.log(typeof functionExample)
+    console.log(functionExample('hooray'))
+
+    const calculator = (num1, operator, num2)=>{
+        switch (operator){
+            case '+':
+                return num1 + num2;
+            case '-':
+                return num1 - num2;
+            case '*':
+                return num1 * num2;
+            case '/':
+                return num1 / num2;
+            default:
+                return undefined;
+        }
+    }
+
+    console.log(calculator(3,'*', 3));
+</script>
+</body>
+</html>

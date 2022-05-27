@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browser Event</title>
+</head>
+<body>
+<input type="text" name="nama" id="nama" onclick="ketik()">
+<select name="negara">
+    <option value="ID">Indonesia</option>
+    <option value="SG">Singapore</option>
+    <option value="US">America</option>
+</select>
+<button>Klik Saia</button>
+<hr>
+<img src="img/image-1.png" id="gambarKu" width="200px" onmouseover="gantiWarna()">
+<script>
+    (function (){
+        console.log('immediately invoce function')
+    })();
+
+    //deklarasi function biasa
+    hello = function hello(){
+        console.log('sey hellow')
+    }
+    hello2 = ()=> {
+        console.log('sey hellow from arrow function')
+    }
+    function gantiWarna(){
+        console.log('ganti warna')
+        var gambar = document.getElementById('gambarKu')
+        gambar.style.visibility = 'hidden'
+    }
+    function klikSaia(){
+        alert('anda melakukan klik button')
+    }
+    function pilihNegara(){
+        alert('anda mau pindah negara')
+    }
+    function ketik(){
+        var namaste = document.getElementById('nama')
+        console.log('anda sedang mengetik ' + namaste)
+    }
+</script>
+</body>
+</html>
