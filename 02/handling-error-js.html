@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handling Error Javascript</title>
+</head>
+<body>
+<input type="text" id="angka">
+<button onclick="checkInputan()">Cek Inputan</button>
+<script>
+    function checkInputan(){
+        var hasil = document.getElementById('angka').value
+
+        try {
+            if(hasil > 10){
+                console.log('inputan lebih besar dari sepuluh')
+            }
+        } catch (e) {
+            console.log(e)
+        }
+    }
+</script>
+</body>
+</html>

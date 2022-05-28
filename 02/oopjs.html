@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP JS</title>
+</head>
+<body>
+    <script>
+        class Hewan {
+            //construct
+            constructor(nama, jumlahKaki) {
+                this.nama = nama
+                this.kaki = jumlahKaki
+            }
+            // method Setter
+            setName(nama){
+                this.nama = nama
+            }
+            // method Getter
+            getName(){
+                return this.nama
+            }
+            //method
+            speak(){
+                console.log('speak')
+            }
+
+            eat(){
+                console.log('eat')
+            }
+
+            sleep(){
+                console.log('sleep')
+            }
+        }
+        //cara instance object
+        var kambing = new Hewan('kambing', 4)
+        kambing.setName('Domba Garut')
+        console.log(kambing.getName())
+        kambing.speak()
+        var ayam = new Hewan('ayam', 2)
+        ayam.speak()
+    </script>
+</body>
+</html>

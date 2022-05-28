@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alert, Confirm, Prompt</title>
+</head>
+<body>
+<div id="nama"></div>
+<script>
+
+    var yakin = confirm('apakah anda yaqueen?')
+    if(yakin) {
+        alert('makasih udah yaqueen')
+    }
+    else {
+        alert('kurang yaqueen')
+    }
+
+    var nama = prompt('saha kamu')
+    document.getElementById('nama').innerHTML = nama
+</script>
+</body>
+</html>
