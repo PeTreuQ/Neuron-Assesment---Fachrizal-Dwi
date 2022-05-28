@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contoh Set Timeout & Interval JS</title>
+</head>
+<body>
+    <span id="welkom">Silahkan tunggu 2 detik </span>
+    <h2 id="message"></h2>
+    <button id="tombol">hupus</button>
+    <hr>
+    <div id="welcometext"></div>
+    <script>
+        setTimeout(function() {
+            document.getElementById('welkom').style.visibility= 'hidden'
+            document.getElementById('message').innerHTML = 'Helo selamet dateng'
+        }, 2000)
+        document.getElementById('tombol').addEventListener('click', hapusText)
+        function hapusText(){
+            alert('tungguin 2 detik')
+            setTimeout(function (){
+                document.getElementById('message').style.visibility= 'hidden'
+            },2000)
+        }
+        var textnyah = 'welkom aleando<br>'
+        //Contoh implementasi setInterval
+        setInterval(function(){
+            document.getElementById('welcometext').innerHTML += textnyah
+        },1000)
+        setInterval(function(){
+            document.getElementById('welcometext').innerHTML = ''
+        },4000)
+        setTimeout(function (){
+            textnyah = 'welkom komputer<br>'
+        },5000)
+    </script>
+</body>
+</html>
