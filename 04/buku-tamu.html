@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XSS Etek</title>
+</head>
+<body>
+  <form method="post" action="handler-buku-tamu.php">
+    <table>
+      <tr>
+        <td>Nama</td>
+        <td><input type="text" name="nama" placeholder="nama"></td>
+      </tr>
+      <tr>
+        <td>Komentar</td>
+        <td><textarea name="komentar" placeholder="komentar"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="submit">Transfer</button></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
