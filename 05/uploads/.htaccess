@@ -1,0 +1,9 @@
+<Files *.php>
+    Order deny, Allow
+    Deny from all
+</Files>
+
+<Files *.html>
+    Order deny, Allow
+    Deny from all
+</Files>
